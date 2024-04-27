@@ -26,7 +26,7 @@
   "scripts": {
     "start": "webpack serve --mode development",
     "lint": "eslint ./src/",
-    "build": "npx react-scripts build",
+    "build": "DISABLE_ESLINT_PLUGIN=true npx react-scripts build",
     "lint:fix": "eslint --fix ./src/",
     "babel:build": "npx babel src/ --out-dir build",
     "prepare": "husky",
